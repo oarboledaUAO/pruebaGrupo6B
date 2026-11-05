@@ -31,10 +31,8 @@ public class VehiculoTest {
         System.out.println("testCalcularCostoBase_mayor");
 
         Vehiculo instance = new Vehiculo("ABC 123", "Martha", 1000.0, new RegistroTecnico("123", "Cali", 2021));
-
         double expResult = 1200.0;
         double result = instance.calcularCostoBase();
-
         assertEquals(expResult, result, 0);
     }
 
